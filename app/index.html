@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"/>
+        <title>
+            gremlin lab
+        </title>
+          <!-- Material Design fonts -->
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.1/bootstrap-material-design.css">
+        <!-- our css -->
+        <link rel="stylesheet" href="styles/app.css"/>
+    </head>
+    <body>
+        
+        <table>
+          <tr>
+            <td>
+              <input id="txtHostname" type="text" class="form-control col-md-8" placeholder="hostname">
+            </td>
+            <td>
+              <input id="txtPort" type="text" class="form-control col-md-8" placeholder="port">
+            </td>
+            <td>
+              <a id="btnConnect"class="btn btn-raised btn-default">Connect</a>
+            </td>
+          </tr>
+        </table>
+        
+        <hr>
+        <a id="btnLoadServer" class="btn btn-raised btn-warning">Load Server Graph</a>
+        <a id="btnLoad" class="btn btn-raised btn-warning">Generate Random Graph</a>
+        <a id="btnTakeSnapshot" class="btn btn-raised btn-info">Take Snapshot</a>
+        <a id="btnStartForceLayout" class="btn btn-raised btn-success">Start Force Layout</a>
+        <a id="btnStopForceLayout" class="btn btn-raised btn-primary">Stop Force Layout</a>
+        <hr>
+
+        <!-- The graph container -->
+        <div id="container"></div>
+        <!-- CDN scripts here -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.1/bootstrap-material-design.umd.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.1.0/sigma.min.js"></script>
+        <!-- Sigmajs plugins goes here -->
+        <script src="lib/plugins/sigma.plugins.dragNodes/sigma.plugins.dragNodes.js"></script>
+        <script src="lib/plugins/sigma.renderers.snapshot/sigma.renderers.snapshot.js"></script>
+        <script src="lib/plugins/sigma.layout.forceAtlas2/worker.js"></script>
+        <script src="lib/plugins/sigma.layout.forceAtlas2/supervisor.js"></script>
+        <script src="lib/plugins/sigma.plugins.filter/sigma.plugins.filter.js"></script>
+        <!-- The Gremlin connector library -->
+        <script src="lib/gremlin.js"></script>
+        <!-- main script goes here -->
+        <script src="scripts/main.js">
+        </script>
+    </body>
+</html>

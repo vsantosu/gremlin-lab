@@ -1,0 +1,29 @@
+{
+  "name": "gremlin-lab",
+  "homepage": "https://github.com/mastayoda/gremlin-lab",
+  "authors": [
+    "victor Santos Uceta <victor.uceta@gmail.com>"
+  ],
+  "description": "An IDE-like console for Apache TinkerPop's Gremlin Server",
+  "main": "app/index.html",
+  "moduleType": [],
+  "keywords": [
+    "graph",
+    "database",
+    "gremlin",
+    "visualizer"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.2",
+    "sigma": "^1.1.0"
+  }
+}
